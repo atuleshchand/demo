@@ -476,8 +476,7 @@ Use the axios library in Node.js to make an HTTP request to the Android app's Co
 Receive the search result from the Android app as an HTTP response in Node.js.
 Here's an example implementation of the Node.js code to make the search request and receive the result:
 
-javascript
-Copy code
+```javascript
 const axios = require('axios');
 
 // Specify the URL of the Android app's ContentProvider
@@ -498,6 +497,7 @@ axios.get(androidApiUrl, { params: searchParams })
     // Handle any errors
     console.error(error);
   });
+```
 Customize the Android ContentProvider and Node.js code based on your specific requirements, such as the URI and search query parameters.
 Make sure the Android device and the Node.js application are connected to the same network, and the Android app's ContentProvider is accessible to the Node.js application.
 
